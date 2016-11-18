@@ -1,6 +1,6 @@
 import {Template} from 'meteor/templating';
 import {ReactiveVar} from 'meteor/reactive-var';
-var steem = require('steem');
+// var steem = require('steem');
 
 import './main.html';
 
@@ -19,7 +19,7 @@ Template.hello.events({
     'click button'(event, instance) {
         // increment the counter when button is clicked
         instance.counter.set(instance.counter.get() + 1);
-        steem.broadcast.vote("", "fnait",
+        steem.broadcast.vote("WIF_HERE", "fnait",
             "steemfest", "steemfest-interview-series-xeroc", 10000, function(err, result) {
             console.log(err, result);
         });
