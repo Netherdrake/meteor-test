@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="../node_modules/steem/dist/steem.min.js"></script>
+<script type="text/javascript">
+    steem.broadcast.vote("WIF-HERE", "fnait", "steemfest",
+            "steemfest-interview-series-ned-scott", 10000, function (err, result) {
+                console.log(err, result)
+            });
+
+</script>
+
+</body>
+</html>
